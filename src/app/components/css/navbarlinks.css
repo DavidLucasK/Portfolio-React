@@ -1,0 +1,21 @@
+nav .navbar__content .navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav .navbar__content .navbar__links li:nth-last-child(1) {
+  margin-right: 4rem;
+}
+
+nav .navbar__content .navbar__links a {
+  display: inline-block;
+  color: rgb(217, 219, 223);
+  font-size: 15pt;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+nav .navbar__content .navbar__links a:hover {
+  color: white;
+}

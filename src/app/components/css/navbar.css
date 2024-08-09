@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
+  background-size: 200% 200%;
+}
+
+nav .navbar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
