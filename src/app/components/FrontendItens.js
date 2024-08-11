@@ -29,7 +29,7 @@ export default function FrontendItens() {
                             <Image src="/assets/ts.png" alt="Typescript" width={36} height={36} quality={100} />
                         </div>
                         <h3>Typescript</h3>
-                        <p>Intermediário</p>
+                        <p>Básico</p>
                     </li>
                     <li className="frontend__item">
                         <div className="image-container">

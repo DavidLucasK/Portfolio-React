@@ -90,12 +90,12 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+}
+
+body.dark-theme {
+  background-color: #1d1d1d;
+  color: white;
 }
 
 a {

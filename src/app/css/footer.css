@@ -1,7 +1,6 @@
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;
     animation: gradient 10s ease infinite;
     background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
     background-size: 200% 200%;
@@ -27,7 +26,7 @@ footer .footer__content ul{
 
 footer .footer__content ul li a{
     display: inline-flex;
-    padding: 1rem;
+    padding: 0.5rem;
     transition: 0.3s ease-in-out;
 }
 

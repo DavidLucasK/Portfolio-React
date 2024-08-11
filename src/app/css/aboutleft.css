@@ -63,3 +63,16 @@
     opacity: 1;
     transform: scale(1.10);
 }
+
+.about.dark-theme .about__left ul li a {
+    filter: invert();
+    opacity: 1;
+}
+
+.about.dark-theme .about__left ul li p {
+    color: white;
+}
+
+.about.dark-theme .about__left h2 {
+    color: white;
+}

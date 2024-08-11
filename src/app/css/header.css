@@ -23,3 +23,25 @@ header .header__right .header-img {
     filter: contrast(135%);
     transition: 0.5s ease-in-out;
 }
+
+/* Tema Dark */  
+  body.dark-theme h3 {
+    color: white;
+  }
+  
+  header.dark-theme {
+    background-color: #1d1d1d;
+  }
+  
+  header.dark-theme h1 {
+    color: white;
+  }
+  
+  header.dark-theme .header__right img {
+    filter: brightness(100%);
+  }
+  
+  header.dark-theme .header__left,
+  header.dark-theme .header__right {
+    color: #e0e0e0;
+  }

@@ -3,7 +3,7 @@
 }
 
 .companys .title {
-  width: 120%;
+  text-align: center;
   margin-bottom: 5rem;
   font-size: 24pt;
   font-weight: 600;
@@ -12,8 +12,10 @@
 
 .companys .company-logos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    margin: 0 auto;
 }
   
 .companys .company-logos .image-container {
@@ -28,4 +30,8 @@
 
 .companys .company-logos .image-container:hover {
   transform: scale(107%);
+}
+
+.dark-theme .title {
+  color: white;
 }

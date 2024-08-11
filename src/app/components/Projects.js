@@ -143,7 +143,7 @@ export default function Projects() {
             <a href="https://github.com/DavidLucasK/ToDoList" target="_blank" rel="noopener noreferrer">Acessar Git</a>
           </div>
         </li>
-        <li data-anime="left">
+        {/* <li data-anime="left">
         <div className="image">
             <a href="https://youtube-layout-davidlucask.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Image src="/assets/youtube-layout.png" alt="Youtube" width={567} height={340} quality={100} />
@@ -166,7 +166,7 @@ export default function Projects() {
             </p>
             <a href="https://github.com/DavidLucasK/Youtube-Layout" target="_blank" rel="noopener noreferrer">Acessar Git</a>
         </div>
-        </li>
+        </li> */}
 
         <li data-anime="right">
         <div className="image">

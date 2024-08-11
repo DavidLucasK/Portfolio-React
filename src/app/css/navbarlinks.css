@@ -19,3 +19,7 @@ nav .navbar__content .navbar__links a {
 nav .navbar__content .navbar__links a:hover {
   color: white;
 }
+
+.theme {
+  filter: invert(1);
+}
