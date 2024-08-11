@@ -1,0 +1,70 @@
+.frontend {
+    background-color: #e7e7e7;
+}
+  
+.frontend .frontend__content {
+    padding: 2rem 4rem;
+    text-align: center;   
+}
+
+.frontend .frontend__content .description {
+    padding-top: 1rem;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.frontend .frontend__content .quartiary-title {
+    padding-top: 4rem;
+    font-size: 20pt;
+    font-weight: 500;
+    color: #143761;
+}
+
+.frontend .frontend__content ul {
+    display: flex;
+    flex-wrap: wrap; /* Agora os itens vão pra próxima linha */
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1rem 20rem;/* Paddings laterais para centralizar os itens */ 
+}
+
+.frontend .frontend__content ul li {
+    width: calc(25% - 2rem); /*Quatro itens por linha 100% / 4 = 25% */
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.frontend .frontend__content ul li>* {
+    padding-top: 1rem;
+}
+
+.frontend .frontend__content ul li .image-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.384);
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    opacity: 60%;
+}
+
+.frontend .frontend__content ul li .image-container:hover {
+    transform: translateY(-5px);
+    opacity: 100%;
+}
+
+.frontend .frontend__content h3 {
+    font-size: 12pt;
+    font-weight: 500;  
+}
+
+.frontend .frontend__content p {
+    font-size: 12pt;
+    font-weight: 400;  
+}

@@ -1,18 +1,27 @@
 import Navbar from "./components/Navbar";
-import navbarcss from "./components/css/navbar.css";
-
 import Header from "./components/Header"
-import headercss from "./components/css/header.css";
-
 import About from "./components/About"
-import aboutcss from "./components/css/about.css";
+import Companys from "./components/Companys"
+import Skills from "./components/Skills";
+import Frontend from "./components/Frontend";
+import Backend from "./components/Backend";
+import Mobile from "./components/Mobile";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <main>
-      <Navbar className={navbarcss.Navbar}/>
-      <Header className={headercss.Header}/>
-      <About className={aboutcss.About}/>
+      <Navbar/>
+      <Header/>
+      <About/>
+      <Companys/>
+      <Skills/>
+      <Frontend/>
+      <Backend/>
+      <Mobile/>
+      <Projects/>
+      <Footer/>
     </main>
   );
 }

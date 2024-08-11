@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 //Imagem e css da imagem
-import logoImg from "../assets/Logo.png"
-import logocss from "./css/logo.css"; //Está sendo usado sim!
+import logoImg from "../../../public/assets/Logo.png"
+import logocss from "../css/logo.css"; //Está sendo usado sim!
 
 export default function Logo() {
     return(

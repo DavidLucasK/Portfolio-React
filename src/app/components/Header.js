@@ -1,22 +1,41 @@
+'use client' //para funcionar o hook
+
+import { useEffect } from 'react';
 import Image from 'next/image';
 
-import avatarImg from "../assets/avatar.png"
-import headercss from "./css/header.css"; //Está sendo usado sim!
+//Function de escrever o cargo
+import { typeWriter } from '../utils/typeWriter';
+import { goTo } from '../utils/goTo';
+
+//Estilização e imagens
+import headercss from '../css/header.css';
+
+//Componentes filhos
+import HeaderLeft from './HeaderLeft';
+import HeaderRight from './HeaderRight';
 
 export default function Header() {
-    return (
-      <header>
-          <div className="header__left">
-            <h1>Olá! Meu nome é David Lucas e sou</h1>
-            <h1 className="cargo">Desenvolvedor Fullstack</h1>
-          </div>
-          <div className="header__right">
-            <a href="https://www.linkedin.com/in/david-lucas-a21208176/" rel="noopener noreferrer" target="_blank">
-            <Image src={avatarImg} 
-                className="header-img"
-                alt="David Lucas" />
-            </a>
-          </div>
-      </header>
-    )
+  //Hook para chamar manipular o DOM
+  useEffect(() => {
+    const titulo = document.querySelector('.cargo');
+    const textos = [
+      '', //Colocado pois a função estava duplicando as letras do primeiro item do array pelo tempo
+      'Backend',
+      'Frontend',
+      'FullStack'
+    ];
+
+    if (titulo) {
+      typeWriter(titulo, textos);
+    }
+
+    goTo();
+  });
+
+  return (
+    <header id="header">
+      <HeaderLeft />
+      <HeaderRight />
+    </header>
+  );
 }

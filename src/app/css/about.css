@@ -1,0 +1,5 @@
+.about {
+    display: flex;
+    padding: 7rem 23rem 0;
+    gap: 4rem
+}

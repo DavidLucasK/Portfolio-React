@@ -1,0 +1,17 @@
+.about .about__right {
+    height: fit-content;
+}
+
+.about__right h3 {
+    font-size: 22pt;
+    font-weight: 600;
+    color: #000430;
+    margin-bottom: 2rem;
+}
+
+.about__right p {
+    font-size: 12pt;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+

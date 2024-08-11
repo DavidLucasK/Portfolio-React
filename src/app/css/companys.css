@@ -1,0 +1,31 @@
+.companys {
+  margin-top: 2rem;
+}
+
+.companys .title {
+  width: 120%;
+  margin-bottom: 5rem;
+  font-size: 24pt;
+  font-weight: 600;
+  color: #000430;
+}
+
+.companys .company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.companys .company-logos .image-container {
+  transition: 0.5s ease-in-out;
+  padding: 3rem;
+}
+
+#companys > div > div > a:nth-child(n + 4) > div {
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+
+.companys .company-logos .image-container:hover {
+  transform: scale(107%);
+}

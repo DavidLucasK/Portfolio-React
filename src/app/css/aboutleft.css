@@ -1,0 +1,65 @@
+.about__left > * {
+    margin-bottom: 2rem;
+}
+
+.about__left h2 {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #000430;
+}
+
+.about__left p {
+    width: 25rem;
+    font-size: 12pt;
+}
+
+.about__left ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.about .about__left ul li {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about__left ul li a {
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.about .about__left ul li .mini-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.about .about__left ul li a:hover {
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+.about .about__left ul li p {
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: -5px;
+    width: fit-content;
+    opacity: 0;
+    transition: 400ms ease-in-out;
+    font-size: 14px;
+    color: black;
+}
+
+.about .about__left ul li:nth-child(2) p {
+    margin-left: -1px;
+}
+
+.about .about__left ul li:nth-child(3) p {
+    margin-left: -12px;
+}
+
+.about .about__left ul li:hover p {
+    opacity: 1;
+    transform: scale(1.10);
+}
