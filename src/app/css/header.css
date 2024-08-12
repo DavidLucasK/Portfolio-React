@@ -45,3 +45,122 @@ header .header__right .header-img {
   header.dark-theme .header__right {
     color: #e0e0e0;
   }
+
+/* Dispositivos móveis: 320px — 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+header {
+  display: grid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 0;
+}
+
+  header .header__left{
+    height: 25vh;
+  }
+
+  header .header__left h1 {
+    font-size: 16pt;
+    text-align: center;
+  }
+
+  header .header__right {
+    justify-self: center;
+  }
+
+  header .header__right .header-img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+  }
+}
+/* iPads, tablets: 481px — 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      background-color: red;
+  }
+
+  header .header__left {
+    align-items: center;
+    height: 30vh;
+  }
+
+  header .header__left h1 {
+    text-align: center;
+    font-size: 14pt;
+  }
+
+  header .header__right {
+      justify-self: center;
+  }
+
+  header .header__right .header-img {
+      width: 275px;
+      height: 275px;
+      border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+  }
+}
+
+/* Telas pequenas, laptops: 769px — 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      margin-top: 8rem;
+      gap: 2rem;
+      text-align: center;
+  }
+
+  header .header__left {
+      max-width: 600px;
+      height: 35vh;
+  }
+
+  header .header__left h1 {
+      font-size: 20pt;
+  }
+
+  header .header__right {
+      justify-self: center;
+  }
+
+  header .header__right .header-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+  }
+}
+
+/* Desktops, telas grandes: 1025px — 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  header {
+      display: flex;
+      justify-content: center;
+      padding-right: 4rem;
+      padding-left: 4rem;
+      margin-top: 9rem;
+      gap: 3rem;
+  }
+
+  header .header__left {
+      max-width: 650px;
+      height: 38vh;
+  }
+
+  header .header__left h1 {
+      font-size: 22pt;
+  }
+
+  header .header__right .header-img {
+      width: 325px;
+      height: 325px;
+      border-radius: 63% 37% 63% 37% / 37% 63% 37% 63%;
+  }
+}

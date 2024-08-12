@@ -1,5 +1,6 @@
 import './globals.css';
 import { ThemeProvider } from './components/ThemeContext';
+import { generateViewport } from './generateViewport';
 
 export const metadata = {
   title: 'David Lucas - Portfolio',
@@ -7,8 +8,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const viewport = generateViewport();
+
   return (
     <html lang="pt-BR">
+      <head>
+        <meta name="viewport" content={viewport.viewport} />
+      </head>
       <body>
         <ThemeProvider>
           {children}

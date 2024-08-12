@@ -4,3 +4,18 @@
     height: 130px;
     margin-left: 2rem;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .logo-navbar {
+    width: 90px !important;
+    height: 90px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .logo-navbar {
+    width: 90px !important;
+    height: 90px;
+    margin-left: -20px !important;
+    }
+}
